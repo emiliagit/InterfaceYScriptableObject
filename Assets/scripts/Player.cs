@@ -6,10 +6,7 @@ public class Player : MonoBehaviour
 {
     public float moveSpeed;
 
-    public string Nombre;
-    public int Vida;
-    public string Saludo;
-
+    
     public float distanciaRayCast;
     public float distanciaOverlap;
     //private bool hit;
@@ -39,10 +36,9 @@ public class Player : MonoBehaviour
     {
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, distanciaRayCast))
-        {     // Código a ejecutar si el raycast encuentra un objeto
+        {    
 
         }
-
 
         Debug.DrawRay(transform.position, Vector3.up * distanciaRayCast, Color.red);
 
